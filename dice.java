@@ -14,6 +14,12 @@ System.out.println("Dai 2:"+ daice2);
 
 int ans = daice1+daice2;
 System.out.println("total value : "+ans);
+if(ans>7){
+    System.out.println("you won!");
+}
+    else{
+        System.out.println("you lost!");
+    }
   }
 }
 
