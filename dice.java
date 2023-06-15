@@ -2,7 +2,11 @@ import java.util.Random;
 import java.util.Scanner;
 class Daice{
 public static void main(String[] args){
+Scanner sc = new Scanner(System.in);
 
+System.out.println("What is your name?");
+String a = sc.next();
+System.out.println("Hello"+","+a+"!");
 System.out.println("Rolling the dice...");
 
 Random rand = new Random();
@@ -15,10 +19,10 @@ System.out.println("Dai 2:"+ daice2);
 int ans = daice1+daice2;
 System.out.println("total value : "+ans);
 if(ans>7){
-    System.out.println("you won!");
+    System.out.println(a+ " won!");
 }
     else{
-        System.out.println("you lost!");
+        System.out.println(a+ " lost!");
     }
   }
 }
